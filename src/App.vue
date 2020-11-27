@@ -25,7 +25,6 @@
 				mima: ""
 			}
 		},
-		//这里添加了一些注释
 		setup() {
 			function login() {
 				// axios({
