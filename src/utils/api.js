@@ -10,8 +10,12 @@ export default {
 		login:"/Data/Tback/Users/SysLogin.ashx",
 		// 得到所有的优惠券
 		GetCouponOfAll:"/Data/Coupon/GetCouponOfAll.ashx",
-		//获取优惠券核销表
-		GetCancelStatisticsByCoupon:"/Data/Tback/Coupon/GetCancelStatisticsByCoupon.ashx"
+		// 获取优惠券核销表
+		GetCancelStatisticsByCoupon: "/Data/Tback/Coupon/GetCancelStatisticsByCoupon.ashx",
+		// 查询申请核销权限列表
+		GetCouponGet: "/Data/Tback/Coupon/GetCouponGet.ashx",
+		// 审核权限放行
+		ApplyCheck:"/Data/Tback/Coupon/ApplyCheck.ashx"
 	},
 	// 本地数据库的所有表
 	store:{

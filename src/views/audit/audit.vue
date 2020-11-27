@@ -65,7 +65,7 @@
 	import 'moment/dist/locale/zh-cn';
 
 	moment.locale('en');
-
+	import { post } from "../../utils/http.js" 
 	const columns = [{
 			title: 'Name',
 			dataIndex: 'name',
@@ -97,6 +97,18 @@
 			},
 		},
 		methods: {
+			// 查询
+			GetCouponGet() {
+				post(this.$api.GetCouponGet, {
+                    token:"",
+                    userCode:"",
+                    hotel:"",
+					phone:"",
+					page:1
+				}).then((res) => {
+                    console.log(this.$api.GetCouponGet,res)
+				})
+            },
 			info() {
 				Modal.info({
 					title: 'some info',
